@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: lightskyblue;
+        }
+
+        .center-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn{
+            display: flex;
+        }
+        
+        button{
+            margin: 0 .5rem;
+            border-radius: 1rem;
+            padding: .4rem 1rem;
+            background-color: none;
+            outline: none;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="center-div">
+            <h1 id="stopWatch">00 : 00 : 00</h1>
+            <div class="btn">
+                <button onClick="startTimer()">Start</button>
+                <button onClick="stopTimer()">Stop</button>
+                <button onClick="resetTimer()">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
